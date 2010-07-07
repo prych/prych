@@ -72,7 +72,12 @@
 
             $this->total = count($this->array);
             $this->page = oneof($page, @$_GET[$name], 1);
-            $this->pages = ceil($this->total / $this->per_page);
+
+            if ($this->per_page != 0) {
+              $this->pages = ceil($this->total / $this->per_page);
+            } else {
+              $this->pages = 0;
+            }
 
             $offset = ($this->page - 1) * $this->per_page;
 
