@@ -125,7 +125,7 @@
     require_once INCLUDES_DIR."/lib/gettext/streams.php";
 
     # File: YAML
-    # Horde YAML parsing library.
+    # YAML parsing library.
     require_once INCLUDES_DIR."/lib/YAML.php";
 
     # File: PasswordHash
